@@ -10,4 +10,8 @@
 
 	<bean class="com.dur.dao.TestDao" /> <!-- Test dao bean to autowire -->
 	<bean class="com.dur.HibernateTest" />
+	
+	
+	
+	
 </beans>
