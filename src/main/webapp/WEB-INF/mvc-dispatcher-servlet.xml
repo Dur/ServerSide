@@ -29,14 +29,18 @@
                 </constructor-arg>
             </bean>
         </property>
-        <!-- property name="viewResolvers">
+        <property name="viewResolvers">
         <list>
             <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-                <property name="prefix" value="/WEB-INF/pages/"/>
-                <property name="suffix" value=".jsp"/>
-            </bean>
+				<property name="prefix">
+					<value>/WEB-INF/pages/</value>
+				</property>
+				<property name="suffix">
+					<value>.jsp</value>
+				</property>
+			</bean>
         </list>
-    </property-->
+    </property>
         <property name="defaultViews">
             <list>
                 <!-- JSON View -->
@@ -45,15 +49,7 @@
         </property>
     </bean>
     
-    <bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix">
-			<value>/WEB-INF/pages/</value>
-		</property>
-		<property name="suffix">
-			<value>.jsp</value>
-		</property>
-	</bean>
+    
     
 	<!-- bean id="websocket" class="com.dur.WebsocketEndPoint"/-->
     
